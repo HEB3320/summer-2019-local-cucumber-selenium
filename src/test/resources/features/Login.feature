@@ -1,10 +1,10 @@
-@login @smoke
+@login @smoke @regression
 Feature: Users should be able to login
 
   Background:
     Given the user is on the login page
 
-  @driver @VYT-123
+  @driver @VYT-123 @regression
   Scenario: Login as a driver
     When the users enters the driver information
     Then the user should be able to login

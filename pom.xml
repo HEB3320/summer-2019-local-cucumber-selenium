@@ -44,11 +44,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <parallel>methods</parallel>
+                    <perCoreThreadCount>false</perCoreThreadCount>
+                    <threadCountMethods>4</threadCountMethods>
                     <includes>
                         <include>**/*CukesRunner.java</include>
                         <include>**/*FailedTestRunner.java</include>
                     </includes>
+                        <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
             <plugin>

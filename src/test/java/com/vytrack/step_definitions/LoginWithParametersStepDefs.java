@@ -57,7 +57,7 @@ public class LoginWithParametersStepDefs {
     }
 
     @Then("default page number should be {int}")
-    public void default_page_number_should_be(Integer count) {
+    public void  default_page_number_should_be(Integer count) {
         System.out.println("count = " + count);
 
         ContactsPage contactsPage = new ContactsPage();

@@ -1,6 +1,6 @@
 Feature: Contacts page
 
-
+  @regression
   Scenario: Default page number
     Given a driver is logged in
     When the user goes to "Customers" "Contacts"
@@ -15,7 +15,7 @@ Feature: Contacts page
       | Activities |
       | System     |
 
-
+@regression
   Scenario:  login as a given user
     Given the user is on the login page
     When the user logs in using following credentials

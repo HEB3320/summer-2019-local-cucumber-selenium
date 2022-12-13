@@ -14,4 +14,6 @@ public class ContactInfoPage extends BasePage {
     @FindBy(css="a.email")
     public WebElement email;
 
+
+
 }

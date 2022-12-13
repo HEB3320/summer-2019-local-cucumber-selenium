@@ -1,5 +1,5 @@
 Feature: Login as different users
-
+  @regression
   Scenario: Login as a driver user
     Given the user is on the login page
     When user logs in using "user11" and "UserUser123"
@@ -8,7 +8,7 @@ Feature: Login as different users
 
 
     # write tests for sales manager and store manager
-
+  @regression
   Scenario: Login as a sales manger user
     Given the user is on the login page
     When user logs in using "salesmanager101" and "UserUser123"

@@ -25,8 +25,8 @@ public class ContactsStepDefs {
         List<String> actualList = new ArrayList<>();
         BrowserUtils.waitFor(2);
 
-        for (WebElement option : dashboardPage.menuOptions) {
-            actualList.add(option.getText());
+        for (WebElement each : dashboardPage.menuOptions) {
+            actualList.add(each.getText());
         }
 
         // compare actual list to the expected list
